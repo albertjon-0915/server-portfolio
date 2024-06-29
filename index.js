@@ -15,7 +15,8 @@ const corsOptions = {
      origin: [
           "http://localhost:4000",
           "http://localhost:3000",
-          "https://final-web-portfolio-eta.vercel.app/",
+          "https://final-web-portfolio-lfuljauk8-ajs-projects-7a7e812c.vercel.app",
+          "https://final-web-portfolio-eta.vercel.app",
           "https://server-portfolio-9mcq.onrender.com",
      ],
      credentials: true,
