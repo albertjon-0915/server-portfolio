@@ -12,7 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // cors security
 const corsOptions = {
-     origin: ["http://localhost:4000", "http://localhost:3000", "https://final-web-portfolio-eta.vercel.app/"],
+     origin: [
+          "http://localhost:4000",
+          "http://localhost:3000",
+          "https://final-web-portfolio-eta.vercel.app/",
+          "https://server-portfolio-9mcq.onrender.com",
+     ],
      credentials: true,
      optionsSuccessStatus: 200,
 };
