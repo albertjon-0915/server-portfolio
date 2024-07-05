@@ -9,7 +9,7 @@ module.exports.createAccessToken = (user) => {
           isAdmin: user.isAdmin,
      };
 
-     return jwt.sign(data, process.env.KWT_SECRET_KEY);
+     return jwt.sign(data, process.env.JWT_SECRET_KEY);
 };
 
 // verify user

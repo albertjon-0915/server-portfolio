@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { verify } = require("../auth");
 const User = require("../controllers/users");
+
+// verify user middleware
+const { verify } = require("../auth");
 
 // route for login
 router.post("/login", User.Login);

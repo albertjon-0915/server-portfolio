@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
 const projRoutes = require("./routes/projects");
+const userRoutes = require("./routes/users");
 
 require("dotenv").config();
 
@@ -32,6 +33,7 @@ mongoose.connection.once("open", () => {
 });
 
 app.use("/projects", projRoutes);
+app.use("/users", userRoutes);
 
 if (require.main === module) {
      // listen to port
